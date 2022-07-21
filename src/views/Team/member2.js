@@ -27,7 +27,7 @@ export default function Member2() {
     >
       <Grid item xs={3}>
         <Card sx={{ maxWidth: 1000,marginTop:2 }}>
-          <CardHeader title={member2} />
+          <CardHeader align="center" title={member2} />
           <CardContent align="left">
             <ul>
               {membersData2.map((mem2) => {

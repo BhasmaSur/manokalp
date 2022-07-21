@@ -26,7 +26,7 @@ export default function Member1() {
     >
       <Grid item xs={3}>
         <Card sx={{ maxWidth: 1000,marginTop:2}}>
-          <CardHeader title={membersData.title} />
+          <CardHeader align="center" title={membersData.title} />
           <CardContent align="left">
             <Typography variant="body2" color="text.secondary">
               Address : {membersData.address}

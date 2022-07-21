@@ -9,6 +9,9 @@ export const Dashboard = () => {
       <div>
         <Link to="/medha-madhav">Medha Madhav</Link>
       </div>
+      <div>
+        <Link to="/editorial-board">Eitorial Board</Link>
+      </div>
       </div>
   )
 }
