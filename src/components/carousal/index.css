@@ -1,0 +1,199 @@
+.box1{
+    font-size: 16px;
+    width: 100%;
+    padding-top:12em;
+    margin-bottom: 9rem;
+}
+.box1data1{
+    margin: auto;
+    width: 7rem;
+}
+.box1data1Content{
+    text-align: left;
+    font: normal normal normal 1.25rem/1.5rem ProximaRegular;
+    letter-spacing: 0px;
+    color: #1D3558;
+    opacity: 1;
+}
+.box1data2{
+    margin-top: 3.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 78.75rem;
+}
+.box1data2Content{
+    text-align: center;
+    font: normal normal normal 4rem/4.625rem Baskerville;
+    letter-spacing: 0px;
+    color: #1D3558;
+    opacity: 1;
+}
+.box1data3{
+    width: 49.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    height: 3.375;
+    margin-bottom: 9rem;
+}
+.box1data3Content{
+    text-align: center;
+    font: normal normal normal 1.25rem/1.875rem ProximaRegular;
+    letter-spacing: 0px;
+    color: #1D3558;
+    opacity: 1;
+}
+.outerBox{
+    left: 56.5%;
+    top:2rem;
+    position: absolute;
+    width: 40.25rem;
+}
+.boxc1{ 
+    text-align: center;
+    margin-bottom: 2.25rem;
+}
+.boxc12{
+    height: 7.063rem;
+    text-align: center;
+    padding-right:1rem;
+}
+.boxc2{
+    text-align: center;
+    margin-bottom: 2.25rem;
+}
+.boxc22{
+    height:  7.063rem;
+    text-align: center;
+    padding-right:1rem;
+}
+.outerBox2{
+    left: 2%;
+    top:2rem;
+    position: absolute;
+    width: 39rem;
+}
+.boxc3{
+    left: 2%;
+    height: 7rem;
+    width: 39rem;
+    position: absolute;
+    top: 2.25rem;
+    text-align: center;
+}
+.boxc32{
+    left: 2%;
+    height: 10rem;
+    width: 29rem;
+    position: absolute;
+    text-align: center;
+    top: 6.5rem;
+    
+}
+.boxHeading{
+    text-align: left;
+    font: normal normal normal 2.3rem/2.8rem Baskerville;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.boxCaption{
+    text-align: left;
+    font: normal normal normal 1rem/1.375rem ProximaRegular;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.boxCaption2{
+    margin-top: -1rem;
+    text-align: left;
+    font: normal normal normal 1.25rem/1.875rem ProximaRegular;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.caraouslBox{
+    margin: 1rem;
+}
+.imgHeight{
+    width: 100%;
+}
+@media (max-width:420px){
+    .box1{
+        font-size: 16px;
+        width: 100%;
+        padding-top:8em;
+        margin-bottom: 9rem;
+    }
+    .box1data1{
+        margin: auto;
+        width: 7rem;
+    }
+    .box1data2{
+        width: 40rem;
+        height: 9.188rem;
+    }
+    .box1data3{
+        margin-top: 7em;
+    }
+    .box1data3Content{
+        text-align: center;
+        font: normal normal normal 2rem/2rem ProximaRegular;
+        letter-spacing: 0px;
+        color: #1D3558;
+        opacity: 1;
+    }
+    .imgHeight{
+        width: 100%;
+        height: 250px;
+    }
+    .outerBox{
+        left: 50%;
+        top:2rem;
+        position: absolute;
+        width: 25rem;
+        padding-right: 2rem;
+    }
+    .boxc1{
+        text-align: center;
+    }
+    .boxc12{
+        text-align: center;
+    }
+    .boxc2{
+        text-align: center;
+    }
+    .boxc22{
+        text-align: center;
+    }
+    .outerBox2{
+        left: 2%;
+        top:2rem;
+        position: absolute;
+        width: 39rem;
+    }
+    .boxc3{
+        text-align: center;
+    }
+    .boxc32{
+        position: absolute;
+        text-align: center;        
+    }
+    .boxHeading{
+        text-align: left;
+        font: normal normal normal 1.8rem/2.8rem Baskerville;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+    .boxCaption{
+        text-align: left;
+        font: normal normal normal 1rem/1.375rem ProximaRegular;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
+.sr-only{
+    display: none !important;
+}
