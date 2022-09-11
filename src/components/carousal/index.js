@@ -6,32 +6,16 @@ const Carousal = () => {
     return (
         <div>
           <div className="box1">
-            <div className="box1data1">
-              <p className="box1data1Content">Our Mission</p>
-            </div>
-            <div className="box1data2">
-              <p className="box1data2Content">
-                Perfection in automation, through creating a vision of transparency,
-                trust and belief.
-              </p>
-            </div>
-            <div className="box1data3">
-              <p className="box1data3Content">
-                Work. Build. Play. Lets work on our today to build a promising
-                tomorrow, and play a part in completing our Enso; the circle of
-                togetherness.
-              </p>
-            </div>
-    
             <div className="caraouslBox">
               <Carousel controls={true} indicators={true}>
                 <Carousel.Item>
                   <img
                     className="imgHeight"
-                    src="/assets/c1.PNG"
+                    src="/assets/c1.jpg"
                     alt="First slide"
+                    height={800}
                   />
-                  <div className="outerBox">
+                  {/* <div className="outerBox">
                     <div className="boxc1">
                       <p className="boxHeading">
                         Flexible automations to improve production efficiency
@@ -49,15 +33,16 @@ const Carousal = () => {
                         Re-deployable Assets now makes these applications feasible.
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="imgHeight"
-                    src="/assets/c2.PNG"
+                    src="/assets/c2.jpg"
                     alt="Second slide"
+                    height={800}
                   />
-                  <div className="outerBox">
+                  {/* <div className="outerBox">
                     <div className="boxc2">
                       <p className="boxHeading">
                         Innovative, high-performance solutions for complex process
@@ -71,16 +56,17 @@ const Carousal = () => {
                         performance starts here.
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                   
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="imgHeight"
-                    src="/assets/c3.PNG"
+                    src="/assets/c3.jpg"
                     alt="Third slide"
+                    height={800}
                   />
-                  <div className="outerBox2">
+                  {/* <div className="outerBox2">
                     <div className="boxc3">
                       <p className="boxHeading">
                         High technology, low-cost automations
@@ -94,7 +80,7 @@ const Carousal = () => {
                         in the market.
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                   
                 </Carousel.Item>
               </Carousel>

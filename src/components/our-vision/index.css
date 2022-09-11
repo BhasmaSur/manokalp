@@ -1,0 +1,10 @@
+.imgHeight{
+    width: 100%;
+}
+
+@media (max-width:420px){
+    .imgHeight{
+        width: 100%;
+        height: 250px;
+    }
+}

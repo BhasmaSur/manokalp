@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Dashboard />} exact/>
+        <Route path='/' element={<Home />} exact/>
         <Route path='/home' element={<Home />} exact/>
         <Route path='/about-us' element={<AboutUs />} exact/>
         <Route path='/editorial-board' element={<EditorialBoard />} exact/>

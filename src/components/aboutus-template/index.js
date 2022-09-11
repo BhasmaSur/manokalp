@@ -5,7 +5,7 @@ import React from "react";
 const AboutUsTemplate = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={10}>
+      <Grid container>
         <Grid 
             item
             xs={12}
