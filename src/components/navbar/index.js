@@ -12,21 +12,29 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { useNavigate } from "react-router-dom";
 
 import { red } from "@mui/material/colors";
 import theme from "../theme";
 
-const pages = ["Home", "About Us", "Services", "Magazine", "Contact Us"];
+const pages = [
+  { title: "Home", url: "home" },
+  { title: "About Us", url: "about-us" },
+  { title: "Services", url: "services" },
+  { title: "Magazine", url: "magazine" },
+  { title: "Contact Us", url: "contact-us" },
+];
 
 export const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-
+  let navigate = useNavigate();
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = (event) => {
     setAnchorElNav(null);
+    console.log(event);
   };
 
   //sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
@@ -39,10 +47,9 @@ export const Navbar = () => {
         color: "inherit",
         top: 0,
         borderRadius: 2,
-        
       }}
     >
-      <Container >
+      <Container>
         <Toolbar disableGutters>
           <Box
             component="img"
@@ -63,18 +70,21 @@ export const Navbar = () => {
             }}
           ></Typography>
 
-          <Box  sx={{ display: { xs: "none", md: "flex" }, ml: 10 }}>
+          <Box sx={{ display: { xs: "none", md: "flex" }, ml: 10 }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.title}
+                onClick={() => {
+                  handleCloseNavMenu();
+                  navigate("../" + page.url, { replace: true });
+                }}
                 sx={{
                   fontWeight: 500,
                   fontSize: "15px",
                   m: 1,
                 }}
               >
-                {page}
+                {page.title}
               </Button>
             ))}
           </Box>
@@ -100,14 +110,22 @@ export const Navbar = () => {
                 horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              onClose={() => {
+                handleCloseNavMenu();
+              }}
               sx={{
                 display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem
+                  key={page.title}
+                  onClick={() => {
+                    handleCloseNavMenu();
+                    navigate("../" + page.url, { replace: true });
+                  }}
+                >
+                  <Typography textAlign="center">{page.title}</Typography>
                 </MenuItem>
               ))}
             </Menu>
