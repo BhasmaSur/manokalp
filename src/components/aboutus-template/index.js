@@ -6,16 +6,8 @@ const AboutUsTemplate = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container>
-        <Grid 
-            item
-            xs={12}
-            sm={1}
-            mb={10}
-        >
-
-        </Grid>
+        <Grid mb={20} item xs={12} sm={1}></Grid>
         <Grid
-          mt={-10}
           paddingTop={0}
           paddingBottom={10}
           item
@@ -33,7 +25,7 @@ const AboutUsTemplate = () => {
           </Typography>
         </Grid>
         <Grid
-          mt={10}
+          mt={"10%"}
           item
           xs={12}
           sm={5}
