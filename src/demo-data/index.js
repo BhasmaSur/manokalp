@@ -231,50 +231,63 @@ export const editorialInfo = {
 
 export const ourServices=[
   {
+    url: "/assets/psychological_testing.jpg",
     title:"PSYCHOLOGICAL TESTING",
     desc: "We conduct various types of tests to assess the scientifically individual's IQ, mental state, personality, aptitude and strengths and weaknesses."
+    
   },
   {
+    url: "/assets/COUNSELING.jpg",
     title:"COUNSELING AND PSYCHOTHERAPY",
     desc: "Counselling and Psychotherapy refer to the moods and feelings of the individual. Psychotherapy helps you to take control of your life by facing and tackling challenges along the way."
   },
   {
+    url: "/assets/play_therapy.jpg",
     title:"CHILD GUIDANCE AND PLAY THERAPY",
     desc: "Building a constructive rapport with the child. Play therapy helps the child gradually open up to the therapist, which leads to good results."
   },
   {
+    url: "/assets/academic_guidance.jpg",
     title:"ACADEMIC GUIDANCE",
     desc: "The anxiety of exams, fear of failure, time management issues and peer pressure are common problems children face. We have an expert team of counsellors who guides the students."
   },
   {
+    url: "/assets/health.jpg",
     title:"HEALTH COUNSELING",
     desc: "Physical health and mental health go hand in hand. Physical changes affect our mind, just as mental changes affect our body. Due to this, we suffer from diabetes, blood pressure and other ailments. Ek Disha- Manvantar also helps individuals to manage these conditions and bring them under control."
   },
   {
+    url: "/assets/stress.jpg",
     title:"STRESS MANAGEMENT",
     desc: "Stress is widespread nowadays, and individuals often cannot manage day-to-day stress. We at Ek Disha- Manvantar have efficient stress management workshops so that individuals can lead a much more meaningful life."
   },
   {
+    url: "/assets/eq.jpg",
     title:"EMOTIONAL INTELLIGENCE",
     desc: "EI means the ability to identify and manage your emotions and that of others. Emotional Intelligence is a relatively new concept, and people with a higher EI have much better interpersonal skills. There is a misconception that people with a higher IQ always do well in life. One of the most challenging jobs in the world is managing people, and it is an art."
   },
   {
+    url: "/assets/interpersonal_skills.jpg",
     title:"DEVELOPMENT OF INTERPERSONAL SKILLS",
     desc: "An interpersonal relationship is significant in the workplace, society and home. Managing people is a great skill that can develop over time. Our skilled counsellors are equipped with tools and techniques to guide individuals in developing practical interpersonal skills."
   },
   {
+    url: "/assets/family.jpg",
     title:"FAMILY THERAPY and RELATIONSHIP COUNSELLING",
     desc: "It is always said that making relationships are comparatively easier than maintaining and building relationships. Our team in Ek Disha-Manvantar is trained to conduct FAMILY THERAPY and RELATIONSHIP COUNSELLING. We provide family counselling, pre-marital counselling, and marital counselling."
   },
   {
+    url: "/assets/pscho-education.jpg",
     title:"PSYCHO-EDUCATION",
     desc: "When an individual goes through therapy, family plays a crucial role in the process. The Counsellor's effort, Clients willingness and Family support create wonders regarding the results of the counselling process. So it is necessary to educate family members. We have developed some Psycho-Education-oriented sessions for families."
   },
   {
+    url: "/assets/awareness.jpg",
     title:"AWARENESS PROGRAMMES",
     desc: "A significant social drawback is a stigma around seeking help for psychological issues. Ek Disha- Manvantar helps to create awareness about seeking help from professionals. We at Ek Disha- Manvantar believe spreading awareness about the importance of mental health is the first step to building a psychologically healthy society."
   },
   {
+    url: "/assets/lectures.jpg",
     title:"LECTURES",
     desc: "Lectures are a great way to reach maximum people. There is always a higher chance that the group of clients will become familiar with the counsellors, gradually leading to a better rapport. Then clients end up opening up to the therapist, which will give good results eventually"
   },
