@@ -16,13 +16,39 @@ import { useNavigate } from "react-router-dom";
 
 import { red } from "@mui/material/colors";
 import theme from "../theme";
+import HomeIcon from "@mui/icons-material/Home";
+import PeopleIcon from "@mui/icons-material/People";
+import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
+import CameraRollIcon from "@mui/icons-material/CameraRoll";
+import CallIcon from "@mui/icons-material/Call";
+import WidgetsIcon from '@mui/icons-material/Widgets';
 
 const pages = [
-  { title: "Home", url: "home" },
-  { title: "About Us", url: "about-us" },
-  { title: "Services", url: "services" },
-  { title: "Magazine", url: "magazine" },
-  { title: "Contact Us", url: "contact-us" },
+  {
+    title: "Home",
+    url: "home",
+    icon: <HomeIcon sx={{ pr:"2px", width: "25px", height: "25px" }} />,
+  },
+  {
+    title: "About Us",
+    url: "about-us",
+    icon: <PeopleIcon sx={{ width: "25px", height: "25px" }} />,
+  },
+  {
+    title: "Services",
+    url: "services",
+    icon: <MiscellaneousServicesIcon sx={{ width: "25px", height: "25px" }} />,
+  },
+  {
+    title: "Magazine",
+    url: "magazine",
+    icon: <CameraRollIcon sx={{ width: "25px", height: "25px" }} />,
+  },
+  {
+    title: "Contact Us",
+    url: "contact-us",
+    icon: <CallIcon sx={{ width: "25px", height: "25px" }} />,
+  },
 ];
 
 export const Navbar = () => {
@@ -44,44 +70,48 @@ export const Navbar = () => {
       position="fixed"
       sx={{
         backgroundColor: "white",
-        color: "inherit",
+        color: "green",
         top: 0,
-        borderRadius: 2,
+        boxShadow: 1,
+        borderBottomLeftRadius: 25,
+        borderBottomRightRadius: 25,
+
       }}
     >
       <Container>
         <Toolbar disableGutters>
           <Box
             component="img"
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1, maxWidth: 200 }}
+            sx={{
+              display: { xs: "none", md: "flex" },
+              mr: 4,
+              maxWidth: 170,
+              height: "auto",
+            }}
             alt="Manvantar-Logo"
             src="/assets/navbar-logo.png"
           />
 
-          <Typography
-            variant="h4"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              color: "inherit",
-            }}
-          ></Typography>
-
-          <Box sx={{ display: { xs: "none", md: "flex" }, ml: 10 }}>
+          <Box sx={{ display: { xs: "none", md: "flex" }, ml: 4 }}>
             {pages.map((page) => (
               <Button
+              //disableRipple="true"
+              disableElevation="true"
+                startIcon={page.icon}
                 key={page.title}
                 onClick={() => {
                   handleCloseNavMenu();
                   navigate("../" + page.url, { replace: true });
                 }}
                 sx={{
-                  fontWeight: 500,
+                  fontWeight: 450,
                   fontSize: "15px",
-                  m: 1,
+                  pt: 4,
+                  pb: 4,
+                  pl: 1,
+                  pr: 2,
+
+                  borderRadius: 0,
                 }}
               >
                 {page.title}
@@ -89,15 +119,12 @@ export const Navbar = () => {
             ))}
           </Box>
 
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
+          <Box sx={{ display: { xs: "flex", md: "none" }, color: "green" }}>
+            <IconButton size="large" onClick={handleOpenNavMenu} color="primary">
+              <WidgetsIcon />
             </IconButton>
             <Menu
+              
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -125,7 +152,8 @@ export const Navbar = () => {
                     navigate("../" + page.url, { replace: true });
                   }}
                 >
-                  <Typography textAlign="center">{page.title}</Typography>
+                  <IconButton color="primary">{page.icon}</IconButton>
+                  <Typography textAlign="center" color="primary">{page.title}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -137,7 +165,7 @@ export const Navbar = () => {
               display: { xs: "flex", md: "none" },
               ml: "auto",
               mr: "auto",
-              maxWidth: 200,
+              maxWidth: 170,
             }}
             alt="Manvantar-Logo"
             src="/assets/navbar-logo.png"
