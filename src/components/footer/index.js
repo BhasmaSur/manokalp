@@ -11,62 +11,43 @@ import { Button } from "bootstrap";
 const Footer = () => {
   return (
     <Grid
-      mt={20}
+      mt={3}
       container
       rowSpacing={1}
       direction="column"
       sx={{
-      position: "static",
+        position: "static",
         left: 0,
         bottom: 0,
         paddingBottom: 2,
         right: 0,
-        backgroundColor: "#F1948A",
-        color: "green",
-
-        boxShadow: 4,
-        borderRadius: 2,
+        backgroundColor: "#97BFB4",
+        color: "black",
+        fontWeight: 100,
+        borderTopLeftRadius: 25,
+        borderTopRightRadius: 25,
       }}
     >
-    <Grid item sx={{  paddingBottom: 1 }}>
-      <Grid
-        container
-        justifyContent="center"
-        component="img"
-        sx={{
-          mt: 1,
-          ml: "auto",
-          mr: "auto",
-          maxWidth: "100px",
-        }}
-        alt="Manvantar-Logo"
-        src="/assets/footer-logo.png"
-      />
-        </Grid>
-      <Grid item sx={{  alignItems: "center" }} >
+      <Grid item sx={{ paddingBottom: 1 }}>
         <Grid
           container
-          columnSpacing={1}
           justifyContent="center"
-          alignItems="center"
-        
-        >
-          <Grid item xs={6} sm={3} md={2} >
-            <ListItemButton sx={{ justifyContent: "center" }}>First Link</ListItemButton>
-          </Grid>
-          <Grid item xs={6} sm={3} md={2}>
-          <ListItemButton sx={{ justifyContent: "center" }}>Second Link</ListItemButton>
-          </Grid>
-          <Grid item xs={6} sm={3} md={2}>
-          <ListItemButton sx={{ justifyContent: "center" }}>Third Link</ListItemButton>
-          </Grid>
-          <Grid item xs={6} sm={3} md={2}>
-          <ListItemButton sx={{ justifyContent: "center" }}>Fourth Link</ListItemButton>
-          </Grid>
-        </Grid>
+          component="img"
+          sx={{
+            mt: 3,
+            ml: "auto",
+            mr: "auto",
+            maxWidth: "150px",
+          }}
+          alt="Manvantar-Logo"
+          src="/assets/footer-logo.png"
+        />
+        <Typography align="center" variant="h4">
+          Ek Disha Manvantar
+        </Typography>
       </Grid>
 
-      <Grid item >
+      <Grid item>
         <Grid
           container
           justifyContent="center"
@@ -75,22 +56,27 @@ const Footer = () => {
         >
           <Grid item xs={2} sm={1} md={0.5}>
             <IconButton color="inherit">
-              <FacebookIcon />
+              <FacebookIcon sx={{fill:"inherit"}}/>
             </IconButton>
           </Grid>
           <Grid item xs={2} sm={1} md={0.5}>
-            <IconButton color="inherit">
-              <TwitterIcon />
+            <IconButton color="inherit" >
+              <TwitterIcon sx={{fill:"inherit"}} />
             </IconButton>
+          </Grid>
+          
+          <Grid item xs={2} sm={1} md={0.5}>
+          <a rel="noopener noreferrer" target="_blank" href="https://instagram.com/ek_disha_manvantar?igshid=MDE2OWE1N2Q=" >
+            <IconButton color="inherit">
+              
+                <InstagramIcon sx={{fill:"inherit"}}/>
+              
+            </IconButton>
+            </a>
           </Grid>
           <Grid item xs={2} sm={1} md={0.5}>
             <IconButton color="inherit">
-              <InstagramIcon />
-            </IconButton>
-          </Grid>
-          <Grid item xs={2} sm={1} md={0.5}>
-            <IconButton color="inherit">
-              <LinkedInIcon />
+              <LinkedInIcon sx={{fill:"inherit"}}/>
             </IconButton>
           </Grid>
         </Grid>
@@ -114,3 +100,27 @@ const Footer = () => {
 };
 
 export default Footer;
+/*
+<Grid item sx={{  alignItems: "center", }} >
+        <Grid
+          container
+          columnSpacing={1}
+          justifyContent="center"
+          alignItems="center"
+        
+        >
+          <Grid item xs={6} sm={3} md={2} >
+            <ListItemButton sx={{ justifyContent: "center" , borderRadius: 10}}>First Link</ListItemButton>
+          </Grid>
+          <Grid item xs={6} sm={3} md={2}>
+          <ListItemButton sx={{ justifyContent: "center" , borderRadius: 10}}>Second Link</ListItemButton>
+          </Grid>
+          <Grid item xs={6} sm={3} md={2}>
+          <ListItemButton sx={{ justifyContent: "center" , borderRadius: 10}}>Third Link</ListItemButton>
+          </Grid>
+          <Grid item xs={6} sm={3} md={2}>
+          <ListItemButton sx={{ justifyContent: "center" , borderRadius: 10}}>Fourth Link</ListItemButton>
+          </Grid>
+        </Grid>
+      </Grid>
+*/
