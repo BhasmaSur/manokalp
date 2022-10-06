@@ -1,27 +1,43 @@
 import {
   Button,
   Grid,
-  IconButton,
-  ListItemButton,
   TextField,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, {useState} from "react";
 import Footer from "../../components/footer";
 import { Navbar } from "../../components/navbar";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import CopyrightIcon from "@mui/icons-material/Copyright";
-import { Wrapper } from "@googlemaps/react-wrapper";
 import EmailIcon from "@mui/icons-material/Email";
 import Link from "@mui/material/Link";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
-import theme from "../../components/theme";
+import { sendEmail } from "../../utility/emailService";
 
 const ContactUs = () => {
+
+  const [username, setUsername] = useState();
+  const [email, setEmail] = useState();
+  const [contactNumber, setContactNumber] = useState();
+  const [message, setMessage] = useState();
+
+  const sendDetails = ()=>{
+    let heading = username + " wants to contact you";
+    let subject = "ENQUIRY";
+    let info = `
+        username : ${username},
+        email : ${email},
+        contact number : ${contactNumber},
+        message : ${message}
+    `
+        const detailsPayload = {
+            subject,
+            username : "Aparna",
+            heading,
+            message : info
+        }
+    sendEmail(detailsPayload)
+    alert("Your message is sent successfully, our team will contact you as soon as possible.")
+  }
   return (
     <div>
       <Navbar />
@@ -156,6 +172,8 @@ const ContactUs = () => {
                 variant="outlined"
                 size="small"
                 required="true"
+                value={username}
+                onChange={(event)=> setUsername(event.target.value)}
                 sx={{ width: "90%", fontSize: "2px" }}
               />
             </Grid>
@@ -166,6 +184,8 @@ const ContactUs = () => {
                 label="E-mail"
                 variant="outlined"
                 size="small"
+                value={email}
+                onChange={(event)=> setEmail(event.target.value)}
                 sx={{ width: "90%" }}
                 required="true"
               />
@@ -177,6 +197,8 @@ const ContactUs = () => {
                 label="Contact Number"
                 variant="outlined"
                 size="small"
+                value={contactNumber}
+                onChange={(event)=> setContactNumber(event.target.value)}
                 sx={{ width: "90%" }}
                 required="true"
               />
@@ -192,6 +214,8 @@ const ContactUs = () => {
                 maxRows={4}
                 size="small"
                 required="true"
+                value={message}
+                onChange={(event)=> setMessage(event.target.value)}
                 sx={{ width: "90%", input: { color: "red" } }}
               />
             </Grid>
@@ -200,6 +224,7 @@ const ContactUs = () => {
               <Button
                 variant="contained"
                 sx={{ backgroundColor: "#B2456E", color: "#FBEAE7" }}
+                onClick={sendDetails}
               >
                 Submit
               </Button>
