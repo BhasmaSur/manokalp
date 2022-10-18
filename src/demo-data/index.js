@@ -321,3 +321,84 @@ export const magazine = {
   in another local magazine. The edition, whose theme was motivation, also received a regional
   award. Slowly Manokalp' is reaching more and more people`
 }
+
+export const magazineGallery = [
+  {
+    id : 1,
+    magazinePath : "/assets/magazine/magazine1.png",
+    title : "Magazine 1",
+    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj"
+  },
+  {
+    id : 2,
+    magazinePath : "/assets/magazine/magazine4.png",
+    title : "Magazine 4",
+    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj"
+  },
+  {
+    id : 3,
+    magazinePath : "/assets/magazine/mainCover2.png",
+    title : "Magazine 3",
+    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj"
+  },
+  {
+    id : 4,
+    magazinePath : "/assets/magazine/magazine6.png",
+    title : "Magazine 6",
+    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj"
+  },
+  {
+    id : 5,
+    magazinePath : "/assets/magazine/mainCover.jpg",
+    title : "Magazine 1",
+    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj"
+  },
+]
+
+export const magazineContent ={
+  phillosophy : {
+    title : "Manokalp",
+    desc : `With over 2400 citations over the last three years, Psychological Bulletin is one of the most cited psychology journals out there. There’s a good reason for that. The Psychological Bulletin is a peer-reviewed academic journal that “publishes evaluative and integrative research reviews and interpretations of issues in scientific psychology.” Focusing on both quantitative and qualitative aspects, the Bulletin provides readers a breadth of perspective on the research being done in the field of psychology, allowing readers to stay current on new and exciting breakthroughs in the field.`,
+    imageUrl : "/assets/magazinebg.jpg"
+  },
+  latestMagazine : {
+    title: "Manokalp",
+    anukram : [
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept"
+    ]
+  },
+  blogs : [
+    {
+      title: "ABCA"
+    },
+    {
+      title: "asddaf"
+    },
+    {
+      title: "sajdbahs"
+    }
+  ],
+  testimonials : [
+    {
+      username : "asjndkajsnd",
+      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d"
+    },
+    {
+      username : "aasdsjndkajsnd",
+      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d"
+    },
+    {
+      username : "asjndkadsadadjsnd",
+      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d"
+    },
+    {
+      username : "aasdsjndkajsnd",
+      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d"
+    }
+  ]
+}
