@@ -100,27 +100,3 @@ const Footer = () => {
 };
 
 export default Footer;
-/*
-<Grid item sx={{  alignItems: "center", }} >
-        <Grid
-          container
-          columnSpacing={1}
-          justifyContent="center"
-          alignItems="center"
-        
-        >
-          <Grid item xs={6} sm={3} md={2} >
-            <ListItemButton sx={{ justifyContent: "center" , borderRadius: 10}}>First Link</ListItemButton>
-          </Grid>
-          <Grid item xs={6} sm={3} md={2}>
-          <ListItemButton sx={{ justifyContent: "center" , borderRadius: 10}}>Second Link</ListItemButton>
-          </Grid>
-          <Grid item xs={6} sm={3} md={2}>
-          <ListItemButton sx={{ justifyContent: "center" , borderRadius: 10}}>Third Link</ListItemButton>
-          </Grid>
-          <Grid item xs={6} sm={3} md={2}>
-          <ListItemButton sx={{ justifyContent: "center" , borderRadius: 10}}>Fourth Link</ListItemButton>
-          </Grid>
-        </Grid>
-      </Grid>
-*/
