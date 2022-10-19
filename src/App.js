@@ -11,6 +11,7 @@ import AboutUs from './views/AboutUs';
 import Magazine from './views/Magazine';
 import Services from './views/Services';
 import ContactUs from './views/ContactUs';
+import TestingIt from './views/Testing';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/contact-us' element={<ContactUs />} exact/>
         <Route path='/editorial-board' element={<EditorialBoard />} exact/>
         <Route path='/vaishali-mardhekar' element={<Member1 />} exact/>
+        <Route path='/advice' element={<TestingIt />} exact/>
         <Route path='/medha-madhav' element={<Member2 />} exact/>
       </Routes>
     </Router>
