@@ -31,6 +31,7 @@ const MagazineTemplate = () => {
     <div className="magazine-box">
       <Box
         sx={{
+          marginTop:10,
           paddingTop: 5,
           paddingBottom: 7,
           backgroundSize: "cover",
