@@ -1,15 +1,24 @@
 import { Avatar, Grid, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const AboutUsTemplate = () => {
+  const bgUrl = "/assets/abtbg.jpg";
+  const matches = useMediaQuery("(max-width:400px)");
+  const headingStyle = {
+    fontSize: matches ? "20px" : "40px",
+  };
+
+  const subHeadingStyle = {
+    fontSize: matches ? "14px" : "20px",
+  };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container>
-        <Grid mb={20} item xs={12} sm={1}></Grid>
+        <Grid mb={matches ? 10 : 20} item xs={12} sm={1}></Grid>
         <Grid
-          paddingTop={0}
-          paddingBottom={10}
+          paddingBottom={matches ? 0 : 10}
           item
           xs={12}
           sm={4}
@@ -17,12 +26,30 @@ const AboutUsTemplate = () => {
           direction="column"
           justifyContent="center"
         >
-          <Typography align="center" variant="h4">
-            Welcome to
-          </Typography>
-          <Typography align="center" variant="h3">
-            Ek Disha Manvantar
-          </Typography>
+          <Box
+            sx={{
+              marginTop: matches ? 0 : 10,
+              paddingTop: 5,
+              paddingBottom: 7,
+              backgroundSize: "cover",
+              backgroundImage: `url(${bgUrl})`,
+            }}
+          >
+            <Typography
+              fontSize={subHeadingStyle.fontSize}
+              align="center"
+              variant="h4"
+            >
+              Welcome to
+            </Typography>
+            <Typography
+              fontSize={headingStyle.fontSize}
+              align="center"
+              variant="h3"
+            >
+              Ek Disha Manvantar
+            </Typography>
+          </Box>
         </Grid>
         <Grid
           mt={"10%"}
@@ -33,10 +60,19 @@ const AboutUsTemplate = () => {
           direction="column"
           justifyContent="center"
         >
-          <Typography align="center" variant="h3" padding={2}>
+          <Typography
+            fontSize={headingStyle.fontSize}
+            align="center"
+            variant="h3"
+            padding={2}
+          >
             About Us
           </Typography>
-          <Typography variant="h6" padding={2}>
+          <Typography
+            fontSize={subHeadingStyle.fontSize}
+            variant="h6"
+            padding={2}
+          >
             Unfortunately, mental health and Psychological issues have always
             been given a second preference in our society. Mental Health
             includes our emotional, psychological and social well-being.{" "}
