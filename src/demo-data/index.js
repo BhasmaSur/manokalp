@@ -327,32 +327,146 @@ export const magazineGallery = [
     id : 1,
     magazinePath : "/assets/magazine/magazine1.png",
     title : "Magazine 1",
-    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj"
+    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj",
+    anukram : [
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "end"
+    ]
   },
   {
     id : 2,
     magazinePath : "/assets/magazine/magazine4.png",
     title : "Magazine 4",
-    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj"
+    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj",
+    anukram : [
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept"
+    ]
   },
   {
     id : 3,
     magazinePath : "/assets/magazine/mainCover2.png",
     title : "Magazine 3",
-    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj"
+    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj",
+    anukram : [
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept"
+    ]
   },
   {
     id : 4,
     magazinePath : "/assets/magazine/magazine6.png",
     title : "Magazine 6",
-    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj"
+    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj",
+    anukram : [
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept"
+    ]
   },
   {
     id : 5,
     magazinePath : "/assets/magazine/mainCover.jpg",
     title : "Magazine 1",
-    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj"
+    desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj",
+    anukram : [
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept",
+      "Emotional Intelligence The Concept"
+    ]
   },
+
+{
+  id : 6,
+  magazinePath : "/assets/magazine/magazine1.png",
+  title : "Magazine 1",
+  desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj",
+  anukram : [
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept"
+  ]
+},
+{
+  id : 7,
+  magazinePath : "/assets/magazine/magazine4.png",
+  title : "Magazine 4",
+  desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj",
+  anukram : [
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept"
+  ]
+},
+{
+  id : 8,
+  magazinePath : "/assets/magazine/mainCover2.png",
+  title : "Magazine 3",
+  desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj",
+  anukram : [
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept"
+  ]
+},
+{
+  id : 9,
+  magazinePath : "/assets/magazine/magazine6.png",
+  title : "Magazine 6",
+  desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj",
+  anukram : [
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept"
+  ]
+},
+{
+  id : 10,
+  magazinePath : "/assets/magazine/mainCover.jpg",
+  title : "Magazine 1",
+  desc : "ashbdh ashdjk jasbdhj jasbdhjas jasbdjhas jasdgjsa jasbdj",
+  anukram : [
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept",
+    "Emotional Intelligence The Concept"
+  ]
+},
 ]
 
 export const magazineContent ={
@@ -386,11 +500,20 @@ export const magazineContent ={
   testimonials : [
     {
       username : "asjndkajsnd",
-      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d"
+      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d",
+      anukram : [
+        "Emotional Intelligence The Concept",
+        "Emotional Intelligence The Concept",
+        "Emotional Intelligence The Concept",
+        "Emotional Intelligence The Concept",
+        "Emotional Intelligence The Concept",
+        "Emotional Intelligence The Concept"
+      ]
+
     },
     {
       username : "aasdsjndkajsnd",
-      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d"
+      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d",
     },
     {
       username : "asjndkadsadadjsnd",
