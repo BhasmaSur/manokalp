@@ -3,7 +3,7 @@ import React from "react";
 import { magazineContent } from "../../demo-data";
 import useMediaQuery from '@mui/material/useMediaQuery';
 const LatestMagazine = () => {
-  const matches = useMediaQuery('(max-width:400px)');
+  const matches = useMediaQuery('(max-width:600px)');
   const headingStyle = {
     fontSize : matches ? "20px" : "40px"
   }

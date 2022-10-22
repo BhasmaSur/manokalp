@@ -5,7 +5,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 const AboutUsTemplate = () => {
   const bgUrl = "/assets/abtbg.jpg";
-  const matches = useMediaQuery("(max-width:400px)");
+  const matches = useMediaQuery("(max-width:600px)");
   const headingStyle = {
     fontSize: matches ? "20px" : "40px",
   };

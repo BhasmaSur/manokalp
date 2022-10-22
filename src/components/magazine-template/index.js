@@ -7,7 +7,7 @@ import "./index.css";
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 const MagazineTemplate = () => {
-  const matches = useMediaQuery('(max-width:400px)');
+  const matches = useMediaQuery('(max-width:600px)');
 
   const headingStyle = {
     fontSize : matches ? "20px" : "40px"
