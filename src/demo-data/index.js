@@ -472,7 +472,12 @@ export const magazineGallery = [
 export const magazineContent ={
   phillosophy : {
     title : "Manokalp",
-    desc : `With over 2400 citations over the last three years, Psychological Bulletin is one of the most cited psychology journals out there. There’s a good reason for that. The Psychological Bulletin is a peer-reviewed academic journal that “publishes evaluative and integrative research reviews and interpretations of issues in scientific psychology.” Focusing on both quantitative and qualitative aspects, the Bulletin provides readers a breadth of perspective on the research being done in the field of psychology, allowing readers to stay current on new and exciting breakthroughs in the field.`,
+    desc : `Due to less focus and lack of awareness, some stigma is attached to mental health in 
+    society. People still are not open to approaching psychologists. 'Manokalp' intends to
+    improve mental health with self–help for such people by publishing relevant articles. Mrs
+    Aparna Chavan, the editor, decides on a subject for all age groups. Consult the experts from
+    these fields. They write articles related to a particular topic, which are published to help the
+    readers.`,
     imageUrl : "/assets/magazinebg.jpg"
   },
   latestMagazine : {
@@ -499,29 +504,43 @@ export const magazineContent ={
   ],
   testimonials : [
     {
-      username : "asjndkajsnd",
-      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d",
-      anukram : [
-        "Emotional Intelligence The Concept",
-        "Emotional Intelligence The Concept",
-        "Emotional Intelligence The Concept",
-        "Emotional Intelligence The Concept",
-        "Emotional Intelligence The Concept",
-        "Emotional Intelligence The Concept"
-      ]
-
+      src : "/assets/testimonials/shahu.jpeg",
+      username : "Shahu Miskin",
+      about : "Marketing",
+      feedback : "Ek Disha Manvantar India provided me with immense explanation for lot of my doubts in a very beautiful manner and helped me resolve my issues. My goals of getting first-hand therapeutic experience and learning few coping mechanisms were met here."
     },
     {
-      username : "aasdsjndkajsnd",
-      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d",
+      src : "/assets/testimonials/mithi.jpeg",
+      username : "Mithilesh Singh",
+      about : "Business",
+      feedback : "They helped me to understand through their real life examples of how to regulate and channelize my emotions and thoughts which will help me to become a better version of myself. I liked their lively and interactive environment."
     },
     {
-      username : "asjndkadsadadjsnd",
-      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d"
+      src : "/assets/testimonials/mradul.png",
+      username : "Mradul Mishra",
+      about : "Developer",
+      feedback : "I am extremely grateful to Ek Disha Manvantar which helped me to learn how to prioritize my mental health. My counselor was always extremely friendly.  Ek Disha Manvantar offered me safe emotional space."
     },
     {
-      username : "aasdsjndkajsnd",
-      desc : "a asdbbahsvd ashjvdhjas asdhk asjkbdj jaks djas d"
+      src : "/assets/testimonials/sarika.jpeg",
+      username : "Sarika Dengle",
+      about : "Bio-tech",
+      feedback : "Ek Disha Manvantar was a savior for me in a time of distress and a supportive coach while I was growing."
     }
   ]
 }
+
+export const servicesList = [
+  "Psychological Testing",
+  "Counselling And Psychotherapy",
+  "Child Guidance And Play Therapy",
+  "Academic Guidance",
+  "Health Counselling",
+  "Stress Management",
+  "Emotional Intelligence",
+  "Development Of Interpersonal Skills",
+  "Family Therapy And Relationship Counselling",
+  "Psycho-Education",
+  "Awareness Programes",
+  "Lectures"
+]

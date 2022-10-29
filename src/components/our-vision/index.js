@@ -4,7 +4,7 @@ import React from "react";
 
 const OurVision = () => {
   return (
-    <Grid container>
+    <Grid container >
       <Grid item xs={0}
           sm={1}
           >
@@ -20,7 +20,7 @@ const OurVision = () => {
               The first step is to build a rapport, win their trust and start
               the treatment. While this process continues, increasing their
               self-esteem and confidence is of utmost importance by giving them
-              positive strokes along the way. About Mrs Aparna Chavan
+              positive strokes along the way.
             </Typography>
         </Box>
       </Grid>
