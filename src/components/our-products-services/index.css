@@ -1,0 +1,9 @@
+.bg-box{
+    margin-top: 90px;
+    padding-top: 0.5px;
+    padding-bottom: 90px;
+    /* background-color: #D5F5E3; */
+    min-height: 1500px;
+    background-size: cover;
+    background-image: url("/public/assets/servicesbg.jpeg");
+}
