@@ -14,8 +14,6 @@ const LeftImageTemplate = (props) => {
   } 
 
   const sendDetails = (details)=>{
-    console.log(details)
-    sendEmail(details)
     setBookAppointment(false)
     alert("Your appointment is booked successfully, our team will contact you as soon as possible.")
   }
