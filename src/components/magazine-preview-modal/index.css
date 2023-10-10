@@ -9,3 +9,12 @@
     border-radius: '10px';
     box-shadow: 24;
   };
+
+.left-right-arrow {
+  cursor: pointer;
+}
+
+.left-right-arrow:hover {
+  color: green;
+  cursor: pointer;
+}

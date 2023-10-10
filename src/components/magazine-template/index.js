@@ -1,6 +1,6 @@
 import { Box, Grid, ImageList, ImageListItem, ImageListItemBar, Typography } from "@mui/material";
 import React,{useState} from "react";
-import { magazineGallery, magazineContent } from "../../demo-data";
+import { magazineGallery, magazineContent, MAGAZINE_DETAILS } from "../../demo-data";
 import LatestMagazine from "../magazine-latest";
 import MagazinePreviewModal from "../magazine-preview-modal";
 import "./index.css";
@@ -21,10 +21,8 @@ const MagazineTemplate = () => {
   const showPreviewOfMagazine = (item)=>{
     setMagazineSelected(item)
     setOpen(true)
-    console.log("item",item)
   }
   const handleClose = () =>{
-    console.log("handled close")
     setOpen(false)
   }
   return (
@@ -59,16 +57,16 @@ const MagazineTemplate = () => {
         sx={{ width: matches ? "90%" : "70%", ml: "auto", mr: "auto", p:3, backgroundColor: "green"}}
         cols={3}      
       >
-        {magazineGallery.map((item) => (
-          <ImageListItem key={item.id} sx={{ color : "white" }} onClick={()=>showPreviewOfMagazine(item)}>
+        {MAGAZINE_DETAILS.map((item) => (
+          <ImageListItem key={item.magazineName} sx={{ color : "white" }} onClick={()=>showPreviewOfMagazine(item)}>
             <img
-              src={`${item.magazinePath}`}
-              srcSet={`${item.magazinePath}`}     
-              alt={item.title}
+              src={`${item.magazineCover}`}
+              srcSet={`${item.magazineCover}`}     
+              alt={item.magazineName}
               loading="lazy"
             />
              <ImageListItemBar
-            title={item.title}
+            title={item.magazineName}
             position="below"
           />
           </ImageListItem>

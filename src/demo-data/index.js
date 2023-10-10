@@ -544,3 +544,97 @@ export const servicesList = [
   "Awareness Programes",
   "Lectures"
 ]
+
+export const MAGAZINE_DETAILS = [
+  {
+    magazineName : "Magazine 1",
+    magazineCover : "/assets/magazine/oldMagazines/m1/first.jpg",
+    allMagazinePages : [
+      '/assets/magazine/oldMagazines/m1/first.jpg',
+      '/assets/magazine/oldMagazines/m1/page1.jpg',
+      '/assets/magazine/oldMagazines/m1/page2.jpg'
+    ]
+  },
+  {
+    magazineName : "Magazine 2",
+    magazineCover : "/assets/magazine/oldMagazines/m2/first.jpg",
+    allMagazinePages : [
+      '/assets/magazine/oldMagazines/m2/first.jpg',
+      '/assets/magazine/oldMagazines/m2/page1.jpg',
+      '/assets/magazine/oldMagazines/m2/page2.jpg'
+    ]
+  },
+  {
+    magazineName : "Magazine 3",
+    magazineCover : "/assets/magazine/oldMagazines/m3/first.jpg",
+    allMagazinePages : [
+      '/assets/magazine/oldMagazines/m3/first.jpg',
+      '/assets/magazine/oldMagazines/m3/page1.jpg',
+      '/assets/magazine/oldMagazines/m3/page2.jpg'
+    ]
+  },
+  {
+    magazineName : "Magazine 4",
+    magazineCover : "/assets/magazine/oldMagazines/m4/first.jpg",
+    allMagazinePages : [
+      '/assets/magazine/oldMagazines/m4/first.jpg',
+      '/assets/magazine/oldMagazines/m4/page1.jpg',
+      '/assets/magazine/oldMagazines/m4/page2.jpg'
+    ]
+  },
+  {
+    magazineName : "Magazine 5",
+    magazineCover : "/assets/magazine/oldMagazines/m5/first.jpg",
+    allMagazinePages : [
+      '/assets/magazine/oldMagazines/m5/first.jpg',
+      '/assets/magazine/oldMagazines/m5/page1.jpg',
+      '/assets/magazine/oldMagazines/m5/page2.jpg'
+    ]
+  },
+  {
+    magazineName : "Magazine 6",
+    magazineCover : "/assets/magazine/oldMagazines/m6/first.jpg",
+    allMagazinePages : [
+      '/assets/magazine/oldMagazines/m6/first.jpg',
+      '/assets/magazine/oldMagazines/m6/page1.jpg',
+      '/assets/magazine/oldMagazines/m6/page2.jpg'
+    ]
+  },
+  {
+    magazineName : "Magazine 7",
+    magazineCover : "/assets/magazine/oldMagazines/m7/first.jpeg",
+    allMagazinePages : [
+      '/assets/magazine/oldMagazines/m7/first.jpeg',
+      '/assets/magazine/oldMagazines/m7/page1.jpg',
+      '/assets/magazine/oldMagazines/m7/page2.jpg',
+      '/assets/magazine/oldMagazines/m7/page3.jpg',
+      '/assets/magazine/oldMagazines/m7/page4.jpg',
+      '/assets/magazine/oldMagazines/m7/page5.jpg'
+    ]
+  },
+  {
+    magazineName : "Magazine 8",
+    magazineCover : "/assets/magazine/oldMagazines/m8/first.jpeg",
+    allMagazinePages : [
+      '/assets/magazine/oldMagazines/m8/first.jpeg',
+      '/assets/magazine/oldMagazines/m8/page1.jpg',
+      '/assets/magazine/oldMagazines/m8/page2.jpg',
+      '/assets/magazine/oldMagazines/m8/page3.jpg',
+      '/assets/magazine/oldMagazines/m8/page4.jpg',
+      '/assets/magazine/oldMagazines/m8/page5.jpg'
+    ]
+  },
+  {
+    magazineName : "Magazine 9",
+    magazineCover : "/assets/magazine/oldMagazines/m9/first.jpeg",
+    allMagazinePages : [
+      '/assets/magazine/oldMagazines/m9/first.jpeg',
+      '/assets/magazine/oldMagazines/m9/page1.jpg',
+      '/assets/magazine/oldMagazines/m9/page2.jpg',
+      '/assets/magazine/oldMagazines/m9/page3.jpg',
+      '/assets/magazine/oldMagazines/m9/page4.jpg',
+      '/assets/magazine/oldMagazines/m9/page5.jpg'
+    ]
+  },
+
+]

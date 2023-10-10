@@ -60,7 +60,6 @@ export const Navbar = () => {
 
   const handleCloseNavMenu = (event) => {
     setAnchorElNav(null);
-    console.log(event);
   };
 
   //sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
