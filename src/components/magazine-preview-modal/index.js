@@ -85,7 +85,7 @@ const MagazinePreviewModal = ({ open, handleClose, magazineSelected }) => {
                 <img
                   alt=""
                   src={magazineSelected.allMagazinePages[currentPage]}
-                  width={matches ? "350wh" : "300wh"}
+                  width={matches ? "350wh" : "700wh"}
                   height={matches ? "500wh" : "720wh"}
                 />
               </Grid>
