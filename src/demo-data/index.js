@@ -545,6 +545,22 @@ export const servicesList = [
   "Lectures"
 ]
 
+export const MAGAZINE_LATEST = {
+  magazineName : "Magazine 10",
+  magazineCover : "/assets/magazine/m1/first.jpg",
+  indexPages : [
+    "/assets/magazine/m1/index1.jpg",
+    "/assets/magazine/m1/index2.jpg"
+  ],
+  otherPages : [
+    "/assets/magazine/m1/page1.jpg",
+    "/assets/magazine/m1/page2.jpg",
+    "/assets/magazine/m1/page3.jpg",
+    "/assets/magazine/m1/page4.jpg",
+    "/assets/magazine/m1/page5.jpg"
+  ]
+}
+
 export const MAGAZINE_DETAILS = [
   {
     magazineName : "Magazine 1",
