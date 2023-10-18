@@ -1,13 +1,16 @@
-import { Box, Grid, ImageList, ImageListItem, ImageListItemBar, Typography } from "@mui/material";
+import { Box, Button, Grid, ImageList, ImageListItem, ImageListItemBar, Typography } from "@mui/material";
 import React,{useState} from "react";
 import { magazineGallery, magazineContent, MAGAZINE_DETAILS } from "../../demo-data";
 import LatestMagazine from "../magazine-latest";
 import MagazinePreviewModal from "../magazine-preview-modal";
 import "./index.css";
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { sendEmail } from "../../utility/emailService";
+import OrderNowModal from "../order-now-modal";
 
 const MagazineTemplate = () => {
   const matches = useMediaQuery('(max-width:600px)');
+  const [orderNowModalOpen, setOrderNowModalOpen] = useState(false)
 
   const headingStyle = {
     fontSize : matches ? "20px" : "40px"
@@ -24,6 +27,13 @@ const MagazineTemplate = () => {
   }
   const handleClose = () =>{
     setOpen(false)
+  }
+
+  const sendDetails = (details)=>{
+    console.log(details)
+    sendEmail(details)
+    setOrderNowModalOpen(false)
+    alert("Your order request is sent to admin successfully, our team will contact you as soon as possible.")
   }
   return (
     <div className="magazine-box">
@@ -45,7 +55,12 @@ const MagazineTemplate = () => {
             <Typography fontSize={subHeadingStyle.fontSize} m={2}  align="center" variant="h6">
               {magazineContent.phillosophy.desc}
             </Typography>
+            <Typography fontSize={subHeadingStyle.fontSize} m={2}  align="center" variant="h6">
+              <Button onClick={()=>setOrderNowModalOpen(!orderNowModalOpen)} sx={{marginTop:"10px", marginLeft:"15px", width:"fit-content"}} variant="contained">Order Now</Button>
+            </Typography>
+            
           </Grid>
+          
           <Grid item xs={0} sm={4}></Grid>
         </Grid>
       </Box>
@@ -73,6 +88,7 @@ const MagazineTemplate = () => {
         ))}
       </ImageList>
       <MagazinePreviewModal open={open} handleClose={handleClose} magazineSelected={magazineSelected}/>
+      <OrderNowModal open={orderNowModalOpen} handleClose={setOrderNowModalOpen} sendDetails={sendDetails}/>
     </div>
   );
 };
