@@ -12,6 +12,8 @@ import Magazine from './views/Magazine';
 import Services from './views/Services';
 import ContactUs from './views/ContactUs';
 import TestingIt from './views/Testing';
+import FileDownload from './views/FileDownload';
+import PageCreated from './views/Page-created';
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
         <Route path='/vaishali-mardhekar' element={<Member1 />} exact/>
         <Route path='/advice' element={<TestingIt />} exact/>
         <Route path='/medha-madhav' element={<Member2 />} exact/>
+        <Route path='/test' element={<FileDownload />} exact/>
+        <Route path='/page-created' element={<PageCreated />} exact/>
       </Routes>
     </Router>
   );
